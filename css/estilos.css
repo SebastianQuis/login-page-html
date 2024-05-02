@@ -1,0 +1,131 @@
+:root {
+    --color-one: #264653;
+    --color-two: #2A9D8F;
+    --color-three: #E9C46A;
+    --color-four: #F4A261;
+    --color-five: #E76F51;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+    color: var(--color-one);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom right, #539566  , #72A5C2);
+    height: 100vh;
+}
+
+.login{
+    background-color: var(--color-two);
+    /* height: 90vh; */
+    display: inline-block;
+    position: absolute;
+    /* transform: translate(50%); */
+    padding: 1rem;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    min-width: 28rem;
+    max-width: 38rem;
+    border-radius: 1.5rem;
+}
+
+.login h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: var(--color-three);
+    /* border-bottom: 0.2px solid black; */
+}
+
+.login form{
+    margin: 2rem;
+}
+
+.login input {
+    width: 100%;
+    margin: 1.5rem 0;
+    height: 2.5rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--color-one);
+    border: none;
+    color: white;
+}
+
+.login input:hover{
+    border-bottom: 0.1rem solid var(--color-four);
+}
+
+.login input::placeholder{
+    color: grey;
+}
+
+.login form p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.login form p:hover {
+    cursor: pointer;
+    transform: scale(105%,105%);
+    
+}
+
+
+.login form p a{
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+
+.login button[type="submit"]{
+    background-color: var(--color-five);
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+
+    transition-duration: 2s;
+}
+
+.login button[type="submit"]:hover{
+    transform: scale(105%, 105%);
+    /* scale: 1rem; */
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--color-one);
+    cursor: pointer;
+}
+
+footer img{
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+
+
+
